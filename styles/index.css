@@ -1,0 +1,408 @@
+/* 文字图标引用 */
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?tomleg");
+  src: url("../fonts/icomoon.eot?tomleg#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?tomleg") format("truetype"),
+    url("../fonts/icomoon.woff?tomleg") format("woff"),
+    url("../fonts/icomoon.svg?tomleg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.w {
+  width: 97%;
+  margin: 5px auto;
+}
+body {
+  max-width: 540px;
+  min-width: 320px;
+  margin: 0 auto;
+  font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei",
+    STXihei, hei;
+  color: #000;
+  background-color: #f2f2f2;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+  height: 200px;
+}
+
+/* search开始 */
+.search {
+  position: sticky;
+  display: flex;
+  height: 44px;
+  align-items: center;
+}
+.search .left {
+  position: relative;
+  flex: 1;
+  height: 26px;
+  margin: 0 10px;
+}
+.search .left input {
+  padding-left: 25px;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 13px;
+  border: 2px rgb(0, 134, 246) solid;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.search .left a {
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  width: 15px;
+  height: 15px;
+  background: url(../images/sprite.png) no-repeat -59px -279px;
+  background-size: 104px auto;
+}
+.search .mine {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 44px;
+  height: 44px;
+  font-size: 12px;
+  text-decoration: none;
+  color: #2eaae0;
+}
+.search .mine::before {
+  content: "";
+  width: 23px;
+  height: 23px;
+  background: url(../images/sprite.png) no-repeat -59px -194px;
+  background-size: 104px auto;
+  margin-bottom: -2px;
+}
+/* search结束 */
+
+/* focus开始 */
+.focus a {
+  display: block;
+}
+.focus a img {
+  border-radius: 10px;
+  width: 100%;
+}
+/* focus结束 */
+
+/* local-nav开始 */
+.local-nav {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+  height: 64px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.local-nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+.local-nav ul li a {
+  display: flex;
+  height: 64px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.local-nav ul li a div {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 3px;
+  background: url(../images/localnav_bg.png) no-repeat;
+  background-size: 32px auto;
+}
+.local-nav ul li:nth-child(1) a div {
+  background-position: 0 0;
+}
+.local-nav ul li:nth-child(2) a div {
+  background-position: 0 -32px;
+}
+.local-nav ul li:nth-child(3) a div {
+  background-position: 0 -64px;
+}
+.local-nav ul li:nth-child(4) a div {
+  background-position: 0 -96px;
+}
+.local-nav ul li:nth-child(5) a div {
+  background-position: 0 -128px;
+}
+/* local-nav结束 */
+
+/* nav开始 */
+nav {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  overflow: hidden;
+}
+nav div[class^="row"] {
+  display: flex;
+  height: 88px;
+  background-color: pink;
+}
+nav div[class^="row"]:nth-child(2) {
+  margin: 3px 0;
+}
+nav div[class^="row"] div[class^="column"] {
+  flex: 1;
+  height: 100%;
+}
+nav div[class^="row"] div[class^="column"]:nth-child(-n + 2) {
+  border-right: 1px #fff solid;
+}
+nav div[class^="row"] div[class^="column"] {
+  display: flex;
+  flex-direction: column;
+}
+nav div[class^="row"] div[class^="column"] div {
+  flex: 1;
+}
+nav div[class^="row"] div[class^="column"] div:nth-child(1) {
+  border-bottom: 1px #fff solid;
+}
+nav div[class^="row"] div[class^="column"] div a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 43.5px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+nav div[class^="row"] div.column1 div:nth-child(1) {
+  border-bottom: none;
+}
+nav div[class^="row"] .column1 div a {
+  background: url(../images/nav.png) no-repeat;
+}
+nav div[class^="row"]:nth-child(1) .column1 div a {
+  background-position: center -245px;
+}
+nav div[class^="row"]:nth-child(2) .column1 div a {
+  background-position: center -480px;
+}
+nav div[class^="row"]:nth-child(3) .column1 div a {
+  background-position: center -350px;
+}
+nav div[class^="row"]:nth-child(1) {
+  background: -webkit-linear-gradient(left, #fa5a55, #fa994d);
+}
+nav div[class^="row"]:nth-child(2) {
+  background: -webkit-linear-gradient(left, #4b90ed, #53bced);
+}
+nav div[class^="row"]:nth-child(3) {
+  background: -webkit-linear-gradient(left, #34c2a9, #6cd559);
+}
+
+/* sub-nav开始 */
+.sub-nav {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+
+  height: 128px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.sub-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sub-nav ul li {
+  flex: 20%;
+}
+.sub-nav ul li a {
+  display: flex;
+  height: 64px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.sub-nav ul li a div {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 3px;
+  background: url(../images/subnav-bg.png) no-repeat;
+  background-size: 24px auto;
+}
+.sub-nav ul li:nth-child(1) a div {
+  background-position: 0 3px;
+}
+.sub-nav ul li:nth-child(2) a div {
+  background-position: 0 -24px;
+}
+.sub-nav ul li:nth-child(3) a div {
+  background-position: 0 -52px;
+}
+.sub-nav ul li:nth-child(4) a div {
+  background-position: 0 -277px;
+}
+.sub-nav ul li:nth-child(5) a div {
+  background-position: 0 -82px;
+}
+.sub-nav ul li:nth-child(6) a div {
+  background-position: 3px -142px;
+}
+.sub-nav ul li:nth-child(7) a div {
+  background-position: 0 -172px;
+}
+.sub-nav ul li:nth-child(8) a div {
+  background-position: 0 -112px;
+}
+.sub-nav ul li:nth-child(9) a div {
+  background-position: 0 -196px;
+}
+.sub-nav ul li:nth-child(10) a div {
+  background-position: 3px -248px;
+}
+/* sub-nav结束 */
+
+/* hot开始 */
+.hot {
+  border-top: 1px #bbb solid;
+  background-color: #fff;
+}
+.hot .hd {
+  height: 44px;
+  width: 100%;
+  border-bottom: 1px #ccc solid;
+}
+.hot .hd h2 {
+  font-size: 0;
+}
+.hot .hd h2::after {
+  float: left;
+  content: "";
+  margin: 14.5px 0 0 20px;
+  width: 79px;
+  height: 20px;
+  background: url(../images/hot.png) no-repeat center -17px;
+  background-size: 79px auto;
+}
+.hot .hd a {
+  float: right;
+  font-size: 12px;
+  color: #fff;
+  background: -webkit-linear-gradient(left, purple, red);
+  border-radius: 12px;
+  margin-top: 10px;
+  padding: 3px 10px 3px 10px;
+}
+.hot .hd a::after {
+  display: inline-block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-right: 1px #fff solid;
+  border-bottom: 1px #fff solid;
+  transform: rotate(-45deg);
+}
+.hot .bd {
+  display: flex;
+  flex-direction: column;
+}
+.hot .bd div[class^="row"] {
+  display: flex;
+}
+.hot .bd div[class^="row"] img {
+  width: 100%;
+}
+.hot .bd .row2 {
+  border-top: 1px #eee solid;
+  border-bottom: 1px #eee solid;
+}
+.hot .bd div[class^="row"] div:first-child {
+  border-right: 1px #eee solid;
+}
+/* hot结束 */
+
+/* footer开始 */
+footer.w {
+  font-family: "icomoon";
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+footer div {
+  width: 102px;
+  height: 32px;
+  border-radius: 5px;
+  border: 1px rgb(153, 153, 153) solid;
+  text-align: center;
+}
+footer div a {
+  line-height: 30px;
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+}
+footer select {
+  height: 30px;
+  font-family: "icomoon";
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+/* footer结束 */
+
+/* nav-bottom开始 */
+.nav-bottom {
+  display: flex;
+  position: fixed;
+  max-width: 540px;
+  min-width: 320px;
+  bottom: 0;
+  width: 100%;
+  height: 49px;
+  background-color: #fff;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.2);
+}
+.nav-bottom div {
+  flex: 1;
+}
+.nav-bottom a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.nav-bottom a img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+  width: 25px;
+  height: 25px;
+}
+.nav-bottom a p {
+  font-size: 12px;
+  color: rgb(102, 102, 102);
+}
+/* nav-bottom结束 */
+
+.text {
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+}
+.text a {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  padding: 0 20px;
+}
+.text span:first-child a {
+  border-right: 1px #666 solid;
+}
+.copyright {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 100px;
+}
