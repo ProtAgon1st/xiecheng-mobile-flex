@@ -29,7 +29,11 @@ body {
 
 /* search开始 */
 .search {
-  position: sticky;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 540px;
+  min-width: 320px;
   display: flex;
   height: 44px;
   align-items: center;
@@ -83,6 +87,7 @@ body {
 /* focus开始 */
 .focus a {
   display: block;
+  margin-top: 48px;
 }
 .focus a img {
   border-radius: 10px;
